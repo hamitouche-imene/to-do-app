@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <nav>
+        <h4>node my sql</h4>
+        <ul>
+           <li><a href="/">home </a></li>
+            <li><a href="/login">login </a></li>
+            <li><a href="/register">register </a></li>
+        </ul>
+    </nav>
+    
+    <form action="/auth/login" method="POST"> 
+  
+    <div class="card">
+
+<label for="email">email adress </label>
+<input type="text"class="form"id="email"name="email">
+    </div>
+    <div class="card">
+<label for="password">password</label>
+<input type="password"class="form"id="password"name="password">
+
+    </div>
+    
+
+
+    </div>
+    <button type="login">login</button>
+    </form>
+
+
+    {{#if message}}
+        <p>{{message}}</p>
+    {{/if}}
+
+
+
+
+</body>
+</html>
